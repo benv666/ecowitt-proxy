@@ -1,0 +1,12 @@
+---
+services:
+  ecowitt:
+    container_name: ecoproxy
+    image: ecoproxy:latest
+    build: ./
+    restart: unless-stopped
+    ports:
+      - "4199:4199/tcp"
+    environment:
+      PROXY_PORT: "4199"
+      BASE_URL: "https://my.homeassistant.io"

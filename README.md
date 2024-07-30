@@ -25,13 +25,11 @@ $ docker build -t ecoproxy:latest .
 After the build is complete, you can run the CLI tool using the Docker image:
 
 ```
-$ docker run --rm -e DEST_URL=<endpoint> ecoproxy:latest
+$ docker run --rm -e BASE_URL=<endpoint> ecoproxy:latest
 ```
 
-Anyway, above can also be done using make:
-```
-make build-docker docker-run
-```
+This repo also has an example `docker-compose.yaml` that can be used.
+Works for me (tm).
 
 ### Local build
 
