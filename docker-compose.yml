@@ -2,7 +2,7 @@
 services:
   ecowitt:
     container_name: ecoproxy
-    image: ecoproxy:latest
+    image: ghcr.io/benv666/ecowitt-proxy:latest
     build: ./
     restart: unless-stopped
     ports:
