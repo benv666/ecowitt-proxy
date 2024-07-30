@@ -6,7 +6,7 @@ This is a small command-line utility written in Go to proxy Ecowitt weatherstati
 
 ```
 export PROXY_PORT=4199
-export DEST_URL=https://my.homeassistant.com/api/webhook/123312312897345987239847
+export BASE_URL=https://my.homeassistant.com
 ./ecoproxy
 ```
 
